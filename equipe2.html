@@ -4,51 +4,68 @@
 	<meta charset="utf-8">
 	<title>Sistema Resoluto</title>
     <link rel="stylesheet" type="text/css" href="_css/estilos.css" media="all"/>
-</head>
-<body>
-    
-    <header id="cabecalho">
-    <figure class="logo">
-        <img src="_imagens/logo.png">
-    </figure>
-        <hgroup>
-        <h1>Sistema Resoluto</h1>   
-        <h2>Lorem Ipsum has been the industry's standard dummy text ever</h2>
-        </hgroup>      
-  <input type="checkbox" id="bt_menu">
-  <label for="bt_menu">&#9776;</label>
-  <nav class="menu">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="#">Sistema Resoluto</a>
-        <ul>
-          <li><a href="#">História</a></li>
-          <li><a href="#">Serviços</a></li>
-          <li><a href="#">Planos</a></li>
-          <li><a href="equipe.html" target="_blank">Equipe</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Postos de Atendimento</a>
-        <ul>
-          <li><a href="#">Curitiba</a></li>
-          <li><a href="#">São Paulo</a></li>
-          <li><a href="#">Rio de Janeiro</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Notícias</a></li> 
-      <li><a href="#">Fale Conosco</a>
-      <ul>
-          <li><a href="#">E-mail</a></li>
-          <li><a href="#">Whatsapp</a></li>
-          <li><a href="#">Redes Sociais</a></li>
-      </ul>
-      </li>
-    </ul>
+<script type="text/javascript">
+      function mudaFoto(foto) {
+        if (foto == 1) {
+          arquivo = "_imagens/sistema.jpg";
+        }
 
-  </nav>
+        if (foto == 2) {
+          arquivo = "_imagens/sistema2.jpg";
+        }
+
+        if (foto == 3) {
+          arquivo = "_imagens/sistema3.jpg";
+        }
+
+        if (foto == 4) {
+          arquivo = "_imagens/sistema1.jpg";
+        }
+
+        document.getElementById('fotocabecalho1').src = arquivo;
+      }   
+      
+    </script>
+</head>
+        
+<body>
+
+    <header id="cabecalho">
+
+    <div class="logo-box">  
+      <figure class="logo">
+          <img src="_imagens/logo.png">
+      </figure>
+    </div>  
+      
+    <div id="titulo">    
+      <h1>Sistema Resoluto</h1>   
+      <h2>Lorem Ipsum has been the industry's standard dummy text ever</h2>
+    </div>
+        
+    <nav class="menu">    
+    <ul>
+      <li><a href="index3.html">Inicio</a></li>
+      <li><a href="#">Sobre</a></li>    
+      <li><a href="#">Postos de Atendimento</a></li>
+      <li><a href="equipe2.html" target="_blank">Equipe</a></li>
+      <li><a href="#">Fale Conosco</a></li>
+    </ul> 
+  </nav> 
+
     <figure class="fotocabecalho">
-      <img src="_imagens/team.jpg">  
-    </figure>  
+      <img id="fotocabecalho1" src="_imagens/sistema.jpg"/>  
+    </figure>
+
+    <div class="bolas">
+    <ol>
+      <li onclick="mudaFoto(1)"></li>
+      <li onclick="mudaFoto(2)"></li>
+      <li onclick="mudaFoto(3)"></li>
+      <li onclick="mudaFoto(4)"></li>
+
+    </ol>
+    </div>  
     </header>
 <div id="interface">
 <section id="corpo">  
