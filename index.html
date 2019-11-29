@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="_css/estilos.css"/>
+    <title>Sistema Resoluto</title>
+    <script type="text/javascript">
+    	function mudaFoto(foto) {
+    		if (foto == 1) {
+    			arquivo	= "_imagens/sistema.jpg";
+    		}
+
+    		if (foto == 2) {
+    			arquivo = "_imagens/sistema2.jpg";
+    		}
+
+    		if (foto == 3) {
+    			arquivo = "_imagens/sistema3.jpg";
+    		}
+
+    		if (foto == 4) {
+    			arquivo = "_imagens/sistema1.jpg";
+    		}
+
+    		document.getElementById('fotocabecalho1').src = arquivo;
+    	}		
+    	
+    </script>
+</head>
+        
+<body>
+
+    <header id="cabecalho">
+    <figure class="logo">
+        <img src="_imagens/logo.png">
+    </figure>
+    <hgroup id="titulo">
+        <h1>Sistema Resoluto</h1>   
+        <h2>Lorem Ipsum has been the industry's standard dummy text ever</h2>
+     </hgroup> 
+    
+    <input type="checkbox" id="bt_menu">
+	<label for="bt_menu">&#9776;</label>
+	<nav class="menu">
+
+		<ul>
+			<li><a href="#">Ínicio</a>
+			 <ul>
+			  	<li><a href="#">Notícias</a></li>
+			  </ul>
+			  </li>
+			<li><a href="#">Sistema Resoluto</a>
+				<ul>
+					<li><a href="#">História</a></li>
+					<li><a href="#">Serviços</a></li>
+					<li><a href="#">Planos</a></li>
+					<li><a href="equipe2.html" target="_blank">Equipe</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Postos de Atendimento</a>
+				<ul>
+					<li><a href="#">Curitiba</a></li>
+					<li><a href="#">São Paulo</a></li>
+					<li><a href="#">Rio de Janeiro</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Fale Conosco</a>
+			<ul>
+					<li><a href="#">E-mail</a></li>
+					<li><a href="#">Whatsapp</a></li>
+					<li><a href="#">Redes Sociais</a></li>
+			</ul>
+			</li>
+		</ul> 
+
+	</nav> 
+
+    <figure class="fotocabecalho">
+      <img id="fotocabecalho1" src="_imagens/sistema.jpg"/>  
+    </figure>
+    <div class="bolas">
+    <ol >
+    	<li onclick="mudaFoto(1)"></li>
+    	<li onclick="mudaFoto(2)"></li>
+    	<li onclick="mudaFoto(3)"></li>
+    	<li onclick="mudaFoto(4)"></li>
+
+    </ol>
+    </div>	
+    </header>
+
+<div id="interface">
+<section id="corpo">
+    
+<h2> Quem Somos: </h2>
+<br/>
+<h3>What is Lorem Ipsum?</h3>
+
+<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis eget lectus nec ullamcorper. Vivamus finibus nisi ut libero feugiat fermentum. Sed vel lacus in nisl rhoncus aliquet sit amet sed massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam ac massa augue. Curabitur in consectetur nulla. Aenean mi neque, fermentum eget mauris nec, semper vehicula est. Maecenas diam justo, ultricies sit amet scelerisque quis, fringilla et felis. Quisque sagittis semper libero, quis auctor lectus maximus quis. Nulla vel porttitor enim. Maecenas et leo nec libero blandit tempus. Vestibulum ornare eros eu sem suscipit lobortis. Suspendisse sollicitudin metus eget elementum interdum. Aenean hendrerit venenatis massa, sit amet congue augue mollis tincidunt.</p>
+<br/>
+<h3>Why do we use it?</h3>
+<p>In rutrum lacinia eros vel consequat. Quisque et arcu eget tellus semper ultrices. Nunc at blandit metus. Nulla congue nisl odio, fringilla vehicula ante scelerisque non. Nulla molestie nulla at sollicitudin finibus. Donec in facilisis eros. Cras in odio eu massa consectetur fringilla gravida ut lacus. Nullam mattis molestie dolor eget aliquam. Morbi congue felis ut nulla luctus porttitor. Fusce egestas nisi vel tortor ultrices viverra. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin convallis mi non tristique fringilla. Nunc ut arcu purus. Vivamus faucibus varius blandit. Nunc eu sodales risus, nec suscipit felis.</p>
+<br/>
+<h3>Where does it come from?</h3>
+<p> Phasellus quis vulputate urna. Cras molestie elementum ornare. Fusce ligula ex, mattis vitae sollicitudin eget, tempus id magna. In varius lacus a erat pellentesque, quis ultricies eros fringilla. In mattis diam a enim egestas maximus quis vel ipsum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque ultricies pellentesque urna, eget dictum lacus aliquet sit amet. Suspendisse potenti. Morbi et erat molestie, dictum urna sed, bibendum nibh. Nam leo risus, iaculis a vestibulum at, venenatis quis velit. Praesent eget libero purus. Fusce non dolor consectetur, suscipit urna id, fringilla lectus.</p>
+<br/>
+<p>Sed sagittis non tortor porta efficitur. Integer vel tristique neque. Ut lobortis elit sit amet augue finibus mattis. Suspendisse porttitor vestibulum leo, in dictum erat molestie sit amet. Proin ut massa in elit ultrices sagittis et eu arcu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris tellus eros, ultricies ultricies urna tempus, luctus interdum leo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc quis elit diam. Nullam ultrices aliquet felis. Curabitur quis eleifend nulla. Aliquam erat volutpat. Integer sed arcu suscipit, accumsan sem vitae, congue ex. Morbi ac elit faucibus, iaculis ipsum id, rhoncus ante. Ut in ante lacus.</p>
+
+</section>
+</div>	
+<div id="footer1">
+  <footer id="rodape">
+  	<p>Sistema Resoluto 2019 </p>
+    <p>Email: loremipsum@lorem.com.br - Telefones: 66 6666 6662 ou 0800 666 6661.</p>  
+  </footer>
+</div>
+</body>
+</html>
